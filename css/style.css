@@ -1,0 +1,194 @@
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  65% {
+    transform: translateX(1.3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  65% {
+    transform: translateX(-1.3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  background-color: #fff; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f7f7f7;
+  color: #777;
+  margin: 3rem; }
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 6rem; }
+  .heading-primary .heading-primary--main, .heading-primary .heading-primary--sub {
+    display: block; }
+  .heading-primary--main {
+    font-size: 6rem;
+    line-height: 10.2rem;
+    letter-spacing: 3.5rem;
+    animation: leftToRight 1.5s ease-in-out; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    letter-spacing: 1.75rem;
+    animation: rightToLeft 1.5s ease-in-out; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-text-align {
+  text-align: center; }
+
+.btn,
+.btn:link,
+.btn:visited {
+  padding: 1.5rem 4rem;
+  border-radius: 1000rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 2.72rem;
+  text-transform: uppercase;
+  transition: all .2s;
+  position: relative; }
+  .btn:hover,
+  .btn:link:hover,
+  .btn:visited:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15); }
+    .btn:hover::after,
+    .btn:link:hover::after,
+    .btn:visited:hover::after {
+      opacity: 0;
+      transform: scale(1.2, 1.4); }
+  .btn:active,
+  .btn:link:active,
+  .btn:visited:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    outline: none; }
+  .btn:focus,
+  .btn:link:focus,
+  .btn:visited:focus {
+    outline: none; }
+  .btn::after,
+  .btn:link::after,
+  .btn:visited::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1000rem;
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1; }
+  .btn.btn-white,
+  .btn:link.btn-white,
+  .btn:visited.btn-white {
+    color: #777;
+    background-color: #fff;
+    animation: bottomToTop 0.8s 0.5s ease-in-out;
+    animation-fill-mode: backwards; }
+  .btn.btn-greem,
+  .btn:link.btn-greem,
+  .btn:visited.btn-greem {
+    color: #fff;
+    background-color: #55c57a; }
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+  .row [class^="col-"] {
+    background-color: orange;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row:not(:last-child) {
+    margin-bottom: 5rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (2 * 2rem)) / 3); }
+  .row .col-2-of-3 {
+    width: calc(100% - (((100% - (2 * 2rem)) / 3) + (2rem))); }
+  .row .col-1-of-4 {
+    width: calc((100% - (3 * 2rem)) / 4); }
+  .row .col-2-of-4 {
+    width: calc(100% - (((((100% - (3 * 2rem)) / 4)) + (2rem)) * 2)); }
+  .row .col-3-of-4 {
+    width: calc(100% - (((100% - (3 * 2rem)) / 4) + (2rem))); }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  height: 95vh;
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 5rem;
+    left: 3rem; }
+    .header__logo-img {
+      height: 3.5rem; }
+  .header__text {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%; }
+
+.tours-section {
+  padding: 9.6rem 0; }

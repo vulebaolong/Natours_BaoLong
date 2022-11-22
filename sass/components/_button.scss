@@ -1,58 +1,55 @@
 .btn,
 .btn:link,
 .btn:visited {
-    padding: 1.5rem 4rem;
-    border-radius: 1000rem;
     display: inline-block;
     text-decoration: none;
     font-size: 1.6rem;
     line-height: 2.72rem;
-    text-transform: uppercase;
     transition: all .2s;
     position: relative;
 
-    &:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
-
-        &::after {
-            opacity: 0;
-            transform: scale(1.2, 1.4);
-        }
-    }
-
-    &:active {
-        transform: translateY(0);
-        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
-        outline: none;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 1000rem;
-        transition: all .5s;
-        width: 100%;
-        height: 100%;
-        background-color: $color-white;
-        z-index: -1;
-    }
-
-    &.btn-white {
-        color: $color-grey-dark-2;
-        background-color: $color-white;
+    &.animation {
         animation: bottomToTop 0.8s 0.5s ease-in-out;
         animation-fill-mode: backwards;
     }
 
-    &.btn-greem {
-        color: $color-white;
-        background-color: $color-primary;
+    &%btn-primary-placehoder {
+        border-radius: 1000rem;
+        padding: 1.5rem 4rem;
+        text-transform: uppercase;
+    }
+
+    &.btn-primary {
+        &-white {
+            @extend %btn-primary-placehoder;
+            color: $color-grey-dark-2;
+            background-color: $color-white;
+
+            @include btn__prmary-effect($color-white)
+        }
+
+        &-green {
+            @extend %btn-primary-placehoder;
+            color: $color-white;
+            background-color: $color-primary;
+            @include btn__prmary-effect($color-primary)
+        }
+    }
+
+    &.btn-secondary {
+        color: $color-primary;
+        border-bottom: 0.1rem solid $color-primary;
+        padding: 0.3rem 0.1rem;
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+            transform: translateY(-0.3rem);
+            box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
+        }
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 0.5rem 0.8rem rgba($color-black, 0.15);
+
+        }
     }
 }

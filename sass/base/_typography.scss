@@ -49,3 +49,15 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-grey-dark-2;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    color: $color-grey-dark-2;
+}

@@ -2,8 +2,14 @@
     max-width: $grid-float-width;
     margin: 0 auto;
 
+
+    &.add_color {
+        [class^="col-"] {
+            background-color: orange;
+        }
+    }
+
     [class^="col-"] {
-        background-color: orange;
         float: left;
 
         &:not(:last-child) {

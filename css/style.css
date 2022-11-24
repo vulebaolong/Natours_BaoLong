@@ -266,6 +266,96 @@ body {
     color: #55c57a;
     margin-bottom: 0.5rem; }
 
+.pricing__card {
+  position: relative;
+  height: 53rem;
+  width: 34rem;
+  perspective: 150rem; }
+  .pricing__card:hover .pricing__card-front {
+    transform: rotateY(180deg); }
+  .pricing__card:hover .pricing__card-back {
+    transform: rotateY(0); }
+  .pricing__card-item {
+    width: 34rem;
+    height: 53rem;
+    top: 0;
+    left: 0;
+    transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+    box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.3rem; }
+  .pricing__card-front {
+    background-color: #fff;
+    transform: rotateY(0); }
+    .pricing__card-front_img {
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: screen;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      padding-top: 70%;
+      border-radius: 0.3rem; }
+      .pricing__card-front_img-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/img/nat-5.jpg); }
+      .pricing__card-front_img-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(/img/nat-6.jpg); }
+      .pricing__card-front_img-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/img/nat-7.jpg); }
+    .pricing__card-front_heading {
+      text-align: right;
+      display: inline;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      position: absolute;
+      width: 60%;
+      right: 2rem;
+      top: 25%; }
+      .pricing__card-front_heading span {
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        font-weight: 300;
+        padding: 1rem 1.5rem; }
+      .pricing__card-front_heading-1 span {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
+        color: #fff; }
+      .pricing__card-front_heading-2 span {
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+        color: #fff; }
+      .pricing__card-front_heading-3 span {
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
+        color: #fff; }
+    .pricing__card-front_content {
+      text-align: center;
+      list-style: none;
+      padding: 3rem 5.8rem;
+      font-size: 1.5rem; }
+      .pricing__card-front_content-text {
+        padding: 1rem 0; }
+        .pricing__card-front_content-text:not(:last-child) {
+          border-bottom: 0.1rem solid #eee; }
+  .pricing__card-back {
+    transform: rotateY(-180deg); }
+    .pricing__card-back-1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+    .pricing__card-back-2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+    .pricing__card-back-3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+    .pricing__card-back_cta {
+      text-align: center;
+      padding: 12.9rem 1.7rem;
+      color: #fff;
+      text-transform: uppercase; }
+      .pricing__card-back_cta span {
+        display: block; }
+      .pricing__card-back_cta-text {
+        font-size: 1.4rem; }
+      .pricing__card-back_cta-price {
+        font-size: 6rem;
+        font-weight: 100; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -323,3 +413,6 @@ body {
   background-size: cover;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   padding: 29rem 16rem; }
+
+.pricing-section {
+  padding: 8.4rem 0; }

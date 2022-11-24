@@ -5,15 +5,20 @@
 .futured-section {
     .futured {
         background-image: linear-gradient(to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url(/img/nat-4.jpg);
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)),
+            url(/img/nat-4.jpg);
         background-position: center;
         background-size: cover;
 
-        clip-path: polygon(0 20%, 100% 0,100% 80%, 0 100%);
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 
         padding: 29rem 16rem;
-        
+
     }
+}
+
+.pricing-section {
+    padding: 8.4rem 0;
+    .pricing {}
 }

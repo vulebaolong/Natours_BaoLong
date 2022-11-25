@@ -20,5 +20,21 @@
 
 .pricing-section {
     padding: 8.4rem 0;
-    .pricing {}
 }
+
+.comment-section {
+    padding: 13.4rem 0;
+    z-index: 1;
+    position: relative;
+    &_video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.14;
+    }
+}
+

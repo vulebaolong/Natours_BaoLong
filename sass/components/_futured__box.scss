@@ -12,7 +12,13 @@
 
     &-icon {
         font-size: 6rem;
-        color: $color-primary;
+        // color: $color-primary;
         margin-bottom: 0.5rem;
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
 }

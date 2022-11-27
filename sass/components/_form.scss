@@ -1,0 +1,113 @@
+.form {
+
+    &_wrap {
+        background-image: linear-gradient(105deg,
+                rgba($color-white, 0.9) 0%,
+                rgba($color-white, 0.9) 50%,
+                rgba(transparent, 0) 50%),
+            url(/img/nat-10.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 3px;
+
+        .form_content {
+            padding: 6rem;
+
+            .form_group {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+
+        }
+    }
+
+    .form_input {
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem;
+        border: none;
+        font-size: 1.5rem;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        border-bottom: 3px solid transparent;
+        transition: all .3s;
+
+        &::placeholder {
+            color: $color-grey-dark-3;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1.2rem 2.5rem rgba($color-black, 0.1);
+            border-bottom: 3px solid $color-secondary-light;
+        }
+
+        &:valid {
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:placeholder-shown+.form_label {
+            transform: translateY(-4rem);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .form_label {
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: inline-block;
+        transition: all .3s;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .form_radio {
+        display: inline-block;
+        width: 49%;
+
+        &-fake {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            transform: translateY(0.9rem);
+            border: 5px solid $color-primary;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 1rem;
+
+            &::after {
+                content: "";
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $color-primary;
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: none;
+            }
+        }
+
+        &-input {
+            display: none;
+        }
+
+        &-input:checked+.form_radio-label .form_radio-fake::after {
+            display: block;
+        }
+
+        &-label-1 {
+            float: left;
+        }
+
+        &-label-2 {
+            float: right;
+        }
+    }
+}

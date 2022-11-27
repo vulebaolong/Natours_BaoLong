@@ -7,6 +7,9 @@
     line-height: 2.72rem;
     transition: all .2s;
     position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
 
     &.animation {
         animation: bottomToTop 0.8s 0.5s ease-in-out;
@@ -40,12 +43,14 @@
         color: $color-primary;
         border-bottom: 0.1rem solid $color-primary;
         padding: 0.3rem 0.1rem;
+
         &:hover {
             color: $color-white;
             background-color: $color-primary;
             transform: translateY(-0.3rem);
             box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
         }
+
         &:active {
             transform: translateY(0);
             box-shadow: 0 0.5rem 0.8rem rgba($color-black, 0.15);

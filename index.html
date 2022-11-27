@@ -23,6 +23,27 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <input class="nav_cb" type="checkbox" id="nav_btn">
+
+        <label class="nav_btn" for="nav_btn">
+            <div class="nav_btn-icon"></div>
+        </label>
+
+        <div class="nav_background"></div>
+
+        <div class="nav_text">
+            <ul class="nav_text_list">
+                <li class="nav_text_list_item"><a href="#">01 &nbsp;about Natours</a></li>
+                <li class="nav_text_list_item"><a href="#">02 &nbsp;your benfits</a></li>
+                <li class="nav_text_list_item"><a href="#">03 &nbsp;popular tours</a></li>
+                <li class="nav_text_list_item"><a href="#">04 &nbsp;stories</a></li>
+                <li class="nav_text_list_item"><a href="#">05 &nbsp;book now</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
     <header class="header">
         <div class="header__logo">
             <img src="./img/logo-white.png" class="header__logo-img" alt="logo white header">
@@ -239,7 +260,75 @@
                 Your browser is not supported!
             </video>
         </section>
+
+        <section class="form-section">
+            <div class="form">
+                <div class="row form_wrap">
+                    <div class="col-1-of-2">
+                        <form action="#" class="form_content">
+                            <div class="u-margin-medium2">
+                                <h2 class="heading-secondary">START BOOKING NOW</h2>
+                            </div>
+                            <div class="form_group">
+                                <input class="form_input" type="text" placeholder="Full name" id="full_name" required>
+                                <label class="form_label" for="full_name">Full name</label>
+                            </div>
+                            <div class="form_group">
+                                <input class="form_input" type="email" placeholder="Email address" id="email" required>
+                                <label class="form_label" for="email">Email address</label>
+                            </div>
+                            <div class="form_group u-margin-medium2">
+                                <div class="form_radio">
+                                    <input class="form_radio-input" type="radio" name="radio" id="radio_1">
+                                    <label class="form_radio-label form_radio-label-1" for="radio_1">
+                                        <span class="form_radio-fake"></span>
+                                        <span>Small tour group</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input class="form_radio-input" type="radio" name="radio" id="radio_2">
+                                    <label class="form_radio-label form_radio-label-2" for="radio_2">
+                                        <span class="form_radio-fake"></span>
+                                        Large tour group</label>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <button href="#" class="btn btn-primary-green">next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="footer_logo">
+            <img class="footer_logo-img" src="./img/logo-green-2x.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul class="footer_text footer_text-left">
+                    <li><a href="#">company</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">carrers</a></li>
+                    <li><a href="#">privacypolicy</a></li>
+                    <li><a href="#">temrs</a></li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer_text footer_text-right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus magni ut <span
+                            class="footer_text-right-span">Vũ Lê Bảo Long</span> at soluta. Nulla quos dolorum modi
+                        aliquid possimus nobis, voluptates sunt qui libero, suscipit nihil. Animi omnis, inventore ex
+                        consectetur eaque, <span class="footer_text-right-span">vulebaolong@gmail.com</span>o totam
+                        sapiente! Soluta, qui! Delectus, incidunt reiciendis!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- <div class="grid-float">
         <div class="row">
             <div class="col-1-of-2">col-1-of-2</div>

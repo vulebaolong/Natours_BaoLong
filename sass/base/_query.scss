@@ -1,0 +1,81 @@
+/* 10px / 16px = 0.625 = 62.5% */
+/* 9px / 16px = 0.5625 = 56.25% */
+/* 8px / 16px = 0.5 = 50% */
+/* 7px / 16px = 0.4375 = 43.75% */
+/* 6px / 16px = 0.375 = 37.5% */
+/* 5px / 16px = 0.3125 = 31.25% */
+
+/* 1800px => 112.5em => big-Large devices (big desktops, less than 1800px)*/
+@media (min-width: 1800px) {}
+
+/* 1401px => 87.5625em - 1799px => 112.4375em => dev*/
+@media (min-width: 1401px) and (max-width: 1799px) {
+    .futured-section {
+        .futured {
+            padding: 26rem 3rem;
+        }
+    }
+}
+
+/* 1400px => 87.5em => X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1400px) {
+    .futured-section {
+        .futured {
+            padding: 26rem 3rem;
+        }
+    }
+}
+
+/* 1200px => 75em => Large devices (desktops, less than 1200px)*/
+@media (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+    .pricing {
+        .pricing_item {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        &__card {
+            margin: 0 auto;
+
+        }
+    }
+
+   
+
+
+
+}
+
+/* 992px => 62em => Medium devices (tablets, less than 992px)*/
+@media (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* 768px => 48em => Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+    html {
+        font-size: 43.75%;
+    }
+}
+
+/* 576px => 36em => X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    html {
+        font-size: 37.5%;
+    }
+}
+
+/* 360px => 22.5em => X-Small devices (mini phones, less than 360px)*/
+@media (max-width: 360px) {
+    html {
+        font-size: 31.25%;
+    }
+}

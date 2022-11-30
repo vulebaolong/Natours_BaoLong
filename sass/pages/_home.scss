@@ -19,13 +19,17 @@
 }
 
 .pricing-section {
-    padding: 8.4rem 0;
+    padding-top: 8.4rem;
+    padding-bottom: 8.4rem;
+    padding-left:  2.5%;
+    padding-right: 2.5%;
 }
 
 .comment-section {
     padding: 13.4rem 0;
     z-index: 1;
     position: relative;
+
     &_video {
         position: absolute;
         width: 100%;
@@ -44,5 +48,3 @@
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8));
 }
-
-

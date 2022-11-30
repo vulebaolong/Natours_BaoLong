@@ -16,4 +16,10 @@ body {
     background-color: $color-grey-light-1;
     color: $color-grey-dark-2;
     margin: 3rem;
+
+}
+
+::selection {
+    color: $color-white;
+    background: $color-primary;
 }

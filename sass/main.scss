@@ -7,16 +7,19 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/grid";
 @import "components/button";
 @import "components/tours__imgs";
 @import "components/futured__box";
 @import "components/pricing__card";
 @import "components/comment_box";
 @import "components/form";
+@import "components/popup";
 
-@import "layout/grid";
 @import "layout/header";
 @import "layout/nav";
 @import "layout/footer";
 
 @import "pages/home";
+
+@import "base/query";

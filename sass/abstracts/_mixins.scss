@@ -32,4 +32,59 @@
         z-index: -1;
     }
 }
+/*
+@include respon(desktop) {
+    font-size: 56.25%;
+}
+*/
+@mixin respon($break_point) {
+    @if $break_point == big_desktop {
+        /* 1800px => 112.5em => big-Large devices (big desktop, less than 1800px)*/
+        @media (min-width: 1800px) {@content};
+    }
+
+    @if $break_point == dev {
+        /* 1800px => 112.5em => big-Large devices (big desktop, less than 1800px)*/
+        @media (min-width: 1401px) and (max-width: 1799px) {@content};
+    }
+
+    @if $break_point == large_desktop {
+        /* 1400px => 87.5em => X-Large devices (large desktop, less than 1400px)*/
+        @media (max-width: 1400px) {@content};
+    }
+
+    @if $break_point == desktop {
+        /* 1200px => 75em => Large devices (desktop, less than 1200px)*/
+        @media (max-width: 1200px) {@content};
+    }
+
+    @if $break_point == tablet {
+        /* 992px => 62em => Medium devices (tablet, less than 992px)*/
+        @media (max-width: 992px) {@content};
+    }
+
+    @if $break_point == not_hover {
+        @media only screen and (max-width: 992px),
+        only screen and (hover: none) {@content};
+    }
+
+    @if $break_point == phone_land {
+        //* 768px => 48em => Small devices (landscape phones, less than 768px)*/
+        @media (max-width: 768px) {@content};
+    }
+
+    @if $break_point == phone_port {
+        /* 576px => 36em => X-Small devices (portrait phones, less than 576px)*/
+        @media (max-width: 576px) {@content};
+    }
+
+    @if $break_point == phone_mini {
+        /* 360px => 22.5em => X-Small devices (mini phones, less than 360px)*/
+        @media (max-width: 360px) {@content};
+    }
+}
+
+
+
+
 

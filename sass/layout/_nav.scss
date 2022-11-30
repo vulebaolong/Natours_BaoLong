@@ -7,7 +7,7 @@
     z-index: 3;
 
     &_cb {
-        // display: none;
+        display: none;
 
         &:checked+.nav_btn .nav_btn-icon {
             background-color: transparent;
@@ -30,7 +30,6 @@
         &:checked~.nav_background {
             transform: translate(-50%, -50%) scale(1);
             transition: all .4s;
-
         }
 
         &:checked~.nav_text {
@@ -94,7 +93,6 @@
                 background-color: $color-grey-dark-2;
                 top: -1rem;
                 transition: all .2s;
-
             }
         }
     }

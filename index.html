@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Natours | Exciting tours for adventurous people</title>
+
+    <!-- JS -->
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
                 <li class="nav_text_list_item"><a href="#">01 &nbsp;about Natours</a></li>
                 <li class="nav_text_list_item"><a href="#">02 &nbsp;your benfits</a></li>
                 <li class="nav_text_list_item"><a href="#">03 &nbsp;popular tours</a></li>
-                <li class="nav_text_list_item"><a href="#">04 &nbsp;stories</a></li>
+                <li class="nav_text_list_item"><a href="#comment">04 &nbsp;stories</a></li>
                 <li class="nav_text_list_item"><a href="#">05 &nbsp;book now</a></li>
             </ul>
         </div>
@@ -127,22 +130,14 @@
             </div>
         </section>
 
-        <section class="pricing-section">
+        <section class="pricing-section" id="pricing">
             <div class="pricing u-text-align">
                 <div class="u-text-align u-margin-big">
                     <h2 class="heading-secondary">MOST POPULAR TOURS</h2>
                 </div>
                 <div class="row u-margin-big-1">
-                    <div class="col-1-of-3">
+                    <div class="col-1-of-3 pricing_item">
                         <div class="pricing__card">
-                            <div class="pricing__card-item pricing__card-back pricing__card-item pricing__card-back-1">
-                                <div class="pricing__card-back_cta">
-                                    <span class="pricing__card-back_cta-text">only</span>
-                                    <span class="pricing__card-back_cta-price u-margin-big ">$297</span>
-                                    <a href="#" class="btn btn-primary-white">book now!</a>
-                                </div>
-                            </div>
-
                             <div class="pricing__card-item pricing__card-front">
                                 <div class="pricing__card-front_img pricing__card-front_img-1"></div>
                                 <div class="pricing__card-front_heading pricing__card-front_heading-1">
@@ -156,18 +151,20 @@
                                     <li class="pricing__card-front_content-text"><span>Difficulty: easy</span></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="pricing__card">
-                            <div class="pricing__card-item pricing__card-back pricing__card-item pricing__card-back-2">
-                                <div class="pricing__card-back_cta">
+
+                            <div class="pricing__card-item pricing__card-back pricing__card-back-1">
+                                <div class="pricing__card-back_cta pricing__card-back_cta-1">
                                     <span class="pricing__card-back_cta-text">only</span>
-                                    <span class="pricing__card-back_cta-price u-margin-big ">$497</span>
-                                    <a href="#" class="btn btn-primary-white">book now!</a>
+                                    <span class="pricing__card-back_cta-price">$297</span>
+                                    <a href="#popup" class="btn btn-primary-white">book now!</a>
                                 </div>
                             </div>
 
+                            
+                        </div>
+                    </div>
+                    <div class="col-1-of-3 pricing_item">
+                        <div class="pricing__card">
                             <div class="pricing__card-item pricing__card-front">
                                 <div class="pricing__card-front_img pricing__card-front_img-2"></div>
                                 <div class="pricing__card-front_heading pricing__card-front_heading-2">
@@ -182,18 +179,18 @@
                                     <li class="pricing__card-front_content-text"><span>Difficulty: medium</span></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="pricing__card">
-                            <div class="pricing__card-item pricing__card-back pricing__card-item pricing__card-back-3">
-                                <div class="pricing__card-back_cta">
+
+                            <div class="pricing__card-item pricing__card-back pricing__card-back-2">
+                                <div class="pricing__card-back_cta pricing__card-back_cta-2">
                                     <span class="pricing__card-back_cta-text">only</span>
-                                    <span class="pricing__card-back_cta-price u-margin-big ">$897</span>
-                                    <a href="#" class="btn btn-primary-white">book now!</a>
+                                    <span class="pricing__card-back_cta-price">$497</span>
+                                    <a href="#popup" class="btn btn-primary-white">book now!</a>
                                 </div>
                             </div>
-
+                        </div>
+                    </div>
+                    <div class="col-1-of-3 pricing_item">
+                        <div class="pricing__card">
                             <div class="pricing__card-item pricing__card-front">
                                 <div class="pricing__card-front_img pricing__card-front_img-3"></div>
                                 <div class="pricing__card-front_heading pricing__card-front_heading-3">
@@ -208,6 +205,14 @@
                                     <li class="pricing__card-front_content-text"><span>Difficulty: Hard</span></li>
                                 </ul>
                             </div>
+
+                            <div class="pricing__card-item pricing__card-back pricing__card-back-3">
+                                <div class="pricing__card-back_cta pricing__card-back_cta-3">
+                                    <span class="pricing__card-back_cta-text">only</span>
+                                    <span class="pricing__card-back_cta-price ">$897</span>
+                                    <a href="#popup" class="btn btn-primary-white">book now!</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,7 +220,7 @@
             </div>
         </section>
 
-        <section class="comment-section">
+        <section class="comment-section" id="comment">
             <div class="comment">
                 <div class="u-margin-big u-text-align">
                     <h2 class="heading-secondary">WE MAKE PEOPLE GENUINELY HAPPY</h2>
@@ -329,6 +334,33 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup_content">
+            <div class="popup_left">
+                <img src="./img/nat-8.jpg" alt="nat-8"><img src="./img/nat-9.jpg" alt="nat-9">
+            </div>
+            <div class="popup_right">
+                <div class="u-margin-mini">
+                    <h2 class="heading-secondary">START BOOKING NOW</h2>
+                </div>
+                <h3 class="heading-tertiary u-margin-mini u-margin-mini ">IMPORTANT - PLEASE READ THESE TERMS BEFORE
+                    BOOKING</h3>
+                <p class="paragraph u-margin-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem
+                    et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque
+                    egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla
+                    at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus
+                    et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras
+                    semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec
+                    ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor
+                    condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
+                    porta.</p>
+                <a class="btn btn-primary-green" href="#">book now</a>
+            </div>
+            <a class="popup_button" href="#pricing"></a>
+        </div>
+    </div>
     <!-- <div class="grid-float">
         <div class="row">
             <div class="col-1-of-2">col-1-of-2</div>

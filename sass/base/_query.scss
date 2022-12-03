@@ -31,6 +31,7 @@
     html {
         font-size: 56.25%;
     }
+
     .pricing {
         .pricing_item {
             width: 100%;
@@ -46,9 +47,54 @@
         }
     }
 
-   
+    .futured-section {
+        .futured {
 
+            clip-path: polygon(0 13%, 100% 0, 100% 85%, 0 100%);
+            padding: 20rem 3rem;
 
+            .futured-box {
+                max-width: 80vw;
+            }
+
+            .futured-item {
+                width: 40%;
+                // float: unset;
+                display: inline-block;
+                margin-right: 0;
+
+            }
+
+            .futured-item1 {
+                margin-bottom: 5rem;
+            }
+
+            .futured-item2 {
+                float: right;
+                margin-bottom: 5rem;
+
+            }
+
+            .futured-item3 {
+                float: unset;
+
+            }
+
+            .futured-item4 {
+                float: right;
+            }
+        }
+    }
+
+    .form_wrap .form_content {
+        padding: 5rem;
+    }
+
+    .footer {
+        .footer_text {
+            width: 95%;
+        }
+    }
 
 }
 
@@ -57,12 +103,106 @@
     html {
         font-size: 50%;
     }
+
+    .tours {
+        padding: 0 2rem;
+    }
+
+    .form {
+        .form_wrap {
+            background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0) 50%), url(/img/nat-10.jpg);
+        }
+
+        .form_box {
+            width: 100%;
+        }
+
+        .form_radio {
+            width: max-content;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+
+        .form_radio-fake {
+            border: 4px solid #55c57a;
+        }
+    }
+
+    .footer {
+
+        .footer_box {
+            .footer_text {
+                width: fit-content;
+                float: unset;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .footer_item {
+                width: 70%;
+                margin: 0 auto;
+                float: unset;
+
+                &:not(:last-child) {
+                    margin-bottom: 7rem;
+                }
+            }
+
+        }
+
+    }
 }
 
 /* 768px => 48em => Small devices (landscape phones, less than 768px)*/
 @media (max-width: 768px) {
     html {
         font-size: 43.75%;
+    }
+
+    .tours {
+
+        .tours-item1 {
+            width: 100%;
+            margin-bottom: 10rem;
+            float: none;
+        }
+
+        .tours-item2 {
+            margin: 0 auto;
+            padding-bottom: 35rem;
+            width: 80%;
+            float: none;
+        }
+    }
+
+    .futured-section {
+        .futured {
+
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            padding: 15rem 3rem;
+        }
+    }
+
+    .form {
+        .form_radio-fake {
+            border: 3.5px solid #55c57a;
+        }
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .header__logo {
+        top: 3rem;
+        left: 3rem;
+    }
+
+    .nav {
+        top: 2rem;
+        right: 2rem;
     }
 }
 
@@ -71,11 +211,100 @@
     html {
         font-size: 37.5%;
     }
+
+    .futured-section {
+
+        .futured {
+            .futured__box {
+                padding: 1.5rem 1.5rem 3rem;
+            } 
+
+            .futured-item {
+                width: 47%;
+                // float: unset;
+                display: inline-block;
+                margin-right: 0;
+
+            }
+        }
+    }
+
+    .tours-section {
+        padding: 4.4rem 0;
+    }
+
+    .heading-primary {
+
+        &--main {
+            font-size: 4rem;
+            letter-spacing: 2rem;
+        }
+
+        &--sub {
+            font-size: 1.2rem;
+            letter-spacing: 0.8rem;
+        }
+    }
+
+    .comment_box_item {
+        padding: 6rem 5rem 6rem 8rem;
+    }
+
+    .footer {
+
+        .footer_box {
+
+            .footer_item {
+                width: 90%;
+            }
+
+        }
+    }
+
+    .pricing__card-front_heading {
+        width: 55%;
+    }
 }
 
 /* 360px => 22.5em => X-Small devices (mini phones, less than 360px)*/
 @media (max-width: 360px) {
     html {
         font-size: 31.25%;
+    }
+
+    .heading-primary {
+
+        &--main {
+            font-size: 4rem;
+        }
+
+        &--sub {
+            font-size: 1.5rem;
+            letter-spacing: 1rem;
+        }
+    }
+
+    .form {
+        .form_radio-fake {
+            border: 3px solid #55c57a;
+        }
+    }
+
+    .futured-section {
+        .futured {
+
+            
+
+            .futured-item1 {
+                margin-bottom: 5rem;
+            }
+
+            .futured-item2 {
+                margin-bottom: 5rem;
+
+            }
+
+         
+        }
     }
 }

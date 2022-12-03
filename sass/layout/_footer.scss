@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey-dark-1;
-    padding: 10rem 16rem;
+    padding: 10rem 3rem;
     font-size: 1.4rem;
 
     &_logo {
@@ -16,11 +16,12 @@
     .footer_text {
         border-top: 1px solid $color-grey-dark-3;
         padding-top: 2rem;
+        width: 85%;
+
     }
 
     .footer_text-left {
         list-style: none;
-        width: 80%;
         display: inline-block;
 
         li {
@@ -53,7 +54,6 @@
 
     .footer_text-right {
         color: $color-grey-light-1;
-        width: 80%;
         float: right;
 
         &-span {

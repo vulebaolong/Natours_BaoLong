@@ -40,6 +40,7 @@
         &:checked~.nav_text .nav_text_list {
             transform: translate(-50%, -50%);
             transition: all .6s cubic-bezier(.36, .3, 0, 1.63);
+            width: max-content;
         }
     }
 
@@ -98,8 +99,8 @@
     }
 
     &_background {
-        width: calc(100vw * 3);
-        height: calc(100vw * 3);
+        width: calc(100vw * 4);
+        height: calc(100vw * 4);
         position: absolute;
         background-image: radial-gradient(rgba($color-primary-light, 1),
                 rgba($color-primary-dark, 1));
@@ -129,7 +130,7 @@
             left: 50%;
             transform: translate(-100%, -50%);
             transition: all .3s cubic-bezier(1, -0.56, .7, .34);
-
+            width: max-content;
 
             &_item {
                 text-align: center;
